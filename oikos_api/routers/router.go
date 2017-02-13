@@ -16,9 +16,33 @@ import (
 func init() {
 	ns := beego.NewNamespace("/v1",
 
+		beego.NSNamespace("/tipo_uso",
+			beego.NSInclude(
+				&controllers.TipoUsoController{},
+			),
+		),
+
 		beego.NSNamespace("/dependencia",
 			beego.NSInclude(
 				&controllers.DependenciaController{},
+			),
+		),
+
+		beego.NSNamespace("/espacio_fisico",
+			beego.NSInclude(
+				&controllers.EspacioFisicoController{},
+			),
+		),
+
+		beego.NSNamespace("/espacio_fisico_padre",
+			beego.NSInclude(
+				&controllers.EspacioFisicoPadreController{},
+			),
+		),
+
+		beego.NSNamespace("/tipo_uso_espacio_fisico",
+			beego.NSInclude(
+				&controllers.TipoUsoEspacioFisicoController{},
 			),
 		),
 
@@ -40,9 +64,15 @@ func init() {
 			),
 		),
 
-		beego.NSNamespace("/espacio_fisico",
+		beego.NSNamespace("/campo",
 			beego.NSInclude(
-				&controllers.EspacioFisicoController{},
+				&controllers.CampoController{},
+			),
+		),
+
+		beego.NSNamespace("/espacio_fisico_campo",
+			beego.NSInclude(
+				&controllers.EspacioFisicoCampoController{},
 			),
 		),
 	)
