@@ -13,27 +13,78 @@ angular.module('oikosClienteApp')
     $scope.actual = "";
     $scope.token_service = token_service;
     $scope.breadcrumb = [];
-    $scope.menu_service = [{ //aqui va el servicio de el app de configuracion
-      "Id": 2,
-      "Nombre": "nivel 1",
-      "Url": "url_nivel_1",
-      "Opciones": [{
-        "Id": 3,
-        "Nombre": "nivel 2",
-        "Url": "url_nivel_2",
-        "Opciones": [{
-          "Id": 7,
-          "Nombre": "nivel 3",
-          "Url": "url_nivel_3",
+    $scope.menu_service = [
+      { //aqui va el servicio de el app de configuracion
+          "Id": 2,
+          "Nombre": "Sede",
+          "Url": "",
           "Opciones": [{
-            "Id": 8,
-            "Nombre": "nivel 4 about",
-            "Url": "about",
-            "Opciones": null
-          }]
-        }]
-      }]
-    }];
+              "Id": 3,
+              "Nombre": "Registrar sede",
+              "Url": "crear_sede",
+              "Opciones": null
+              },
+            {
+              "Id": 4,
+              "Nombre": "Consultar sede",
+              "Url": "consultar_sede",
+              "Opciones": null
+            }]
+          },
+          {
+            "Id": 5,
+            "Nombre": "Edificio",
+            "Url": "",
+            "Opciones": [{
+                "Id": 6,
+                "Nombre": "Registrar edificio",
+                "Url": "crear_edificio",
+                "Opciones": null
+                },
+              {
+                "Id": 7,
+                "Nombre": "Consultar edificio",
+                "Url": "consultar_edificio",
+                "Opciones": null
+              }]
+            },
+            {
+
+                "Id": 8,
+                "Nombre": "Espacio físico",
+                "Url": "",
+                "Opciones": [{
+                    "Id": 9,
+                    "Nombre": "Registrar espacio físico",
+                    "Url": "crear_espacio_fisico",
+                    "Opciones": null
+                    },
+                  {
+                    "Id": 10,
+                    "Nombre": "Consultar espacio físico",
+                    "Url": "consultar_espacio_fisico",
+                    "Opciones": null
+                  }]
+                },
+                    {
+
+                    "Id": 11,
+                    "Nombre": "Dependencia",
+                    "Url": "",
+                    "Opciones": [{
+                        "Id": 12,
+                        "Nombre": "Registrar dependencia",
+                        "Url": "crear_dependencia",
+                        "Opciones": null
+                        },
+                      {
+                        "Id": 13,
+                        "Nombre": "Consultar dependencia",
+                        "Url": "consultar_dependencia",
+                        "Opciones": null
+                      }]
+                    }
+      ];
 
     var recorrerArbol = function(item, padre) {
       var padres = "";
