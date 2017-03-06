@@ -52,6 +52,51 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/edificio', {
+        templateUrl: 'views/edificio.html',
+        controller: 'EdificioCtrl',
+        controllerAs: 'edificio'
+      })
+      .when('/crear_edificio', {
+        templateUrl: 'views/edificio/crear_edificio.html',
+        controller: 'CrearEdificioCtrl',
+        controllerAs: 'crearEdificio'
+      })
+      .when('/consultar_edificio', {
+        templateUrl: 'views/edificio/consultar_edificio.html',
+        controller: 'ConsultarEdificioCtrl',
+        controllerAs: 'consultarEdificio'
+      })
+      .when('/consultar_sede', {
+        templateUrl: 'views/sede/consultar_sede.html',
+        controller: 'ConsultarSedeCtrl',
+        controllerAs: 'consultarSede'
+      })
+      .when('/consultar_espacio_fisico', {
+        templateUrl: 'views/espacio_fisico/consultar_espacio_fisico.html',
+        controller: 'ConsultarEspacioFisicoCtrl',
+        controllerAs: 'consultarEspacioFisico'
+      })
+      .when('/consultar_dependencia', {
+        templateUrl: 'views/dependencia/consultar_dependencia.html',
+        controller: 'ConsultarDependenciaCtrl',
+        controllerAs: 'consultarDependencia'
+      })
+      .when('/crear_dependencia', {
+        templateUrl: 'views/dependencia/crear_dependencia.html',
+        controller: 'CrearDependenciaCtrl',
+        controllerAs: 'crearDependencia'
+      })
+      .when('/crear_espacio_fisico', {
+        templateUrl: 'views/espacio_fisico/crear_espacio_fisico.html',
+        controller: 'CrearEspacioFisicoCtrl',
+        controllerAs: 'crearEspacioFisico'
+      })
+      .when('/crear_sede', {
+        templateUrl: 'views/sede/crear_sede.html',
+        controller: 'CrearSedeCtrl',
+        controllerAs: 'crearSede'
+      })
       .otherwise({
         redirectTo: '/'
       });
