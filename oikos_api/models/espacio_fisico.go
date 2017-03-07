@@ -13,6 +13,8 @@ type EspacioFisico struct {
 	Id          int                `orm:"column(id);pk"`
 	Estado      string             `orm:"column(estado)"`
 	TipoEspacio *TipoEspacioFisico `orm:"column(tipo_espacio);rel(fk)"`
+	Nombre      string             `orm:"column(nombre)"`
+	Codigo      string             `orm:"column(codigo)"`
 }
 
 func (t *EspacioFisico) TableName() string {
