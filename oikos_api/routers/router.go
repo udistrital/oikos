@@ -75,6 +75,18 @@ func init() {
 				&controllers.EspacioFisicoCampoController{},
 			),
 		),
+
+		beego.NSNamespace("/dependencia_tipo_dependencia",
+			beego.NSInclude(
+				&controllers.DependenciaTipoDependenciaController{},
+			),
+		),
+
+		beego.NSNamespace("/tipo_dependencia",
+			beego.NSInclude(
+				&controllers.TipoDependenciaController{},
+			),
+		),
 	)
 	beego.AddNamespace(ns)
 }

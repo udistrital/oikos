@@ -146,41 +146,6 @@ func init() {
 			AllowHTTPMethods: []string{"delete"},
 			Params: nil})
 
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "Post",
-			Router: `/`,
-			AllowHTTPMethods: []string{"post"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "GetOne",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"get"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "GetAll",
-			Router: `/`,
-			AllowHTTPMethods: []string{"get"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "Put",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"put"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:DependenciaTipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "Delete",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"delete"},
-			Params: nil})
-
 	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:EspacioFisicoCampoController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:EspacioFisicoCampoController"],
 		beego.ControllerComments{
 			Method: "Post",
@@ -280,41 +245,6 @@ func init() {
 			Params: nil})
 
 	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:EspacioFisicoPadreController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:EspacioFisicoPadreController"],
-		beego.ControllerComments{
-			Method: "Delete",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"delete"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "Post",
-			Router: `/`,
-			AllowHTTPMethods: []string{"post"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "GetOne",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"get"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "GetAll",
-			Router: `/`,
-			AllowHTTPMethods: []string{"get"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"],
-		beego.ControllerComments{
-			Method: "Put",
-			Router: `/:id`,
-			AllowHTTPMethods: []string{"put"},
-			Params: nil})
-
-	beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"] = append(beego.GlobalControllerRouter["github.com/udistrital/oikos/oikos_api/controllers:TipoDependenciaController"],
 		beego.ControllerComments{
 			Method: "Delete",
 			Router: `/:id`,
